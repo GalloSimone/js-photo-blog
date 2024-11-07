@@ -10,7 +10,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit="+ postNumber)
       
         <div class="col">
                 <div class="card m-5 px-3>
-                  <img src="${post.thumbnailUrl}" class="card-img-top" alt="priima foto">
+                  <img src="${post.Url}" class="card-img-top" alt="priima foto">
                   <div class="card-body">
                     <h5 class="card-title">${post.title}</h5>
                    
