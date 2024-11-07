@@ -1,0 +1,37 @@
+/* # RESET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  img{
+    max-width: 100%;
+    display: block;
+  }
+  a{
+    text-decoration: none;
+    color: inherit;
+  }
+  ul{
+    list-style-type: none;
+  }
+  
+  /* # UTILS */
+  
+  .container {
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 1000px;
+    max-width: 100%;
+
+  }
+  .body {
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://as2.ftcdn.net/jpg/02/46/84/01/1000_F_246840126_n5EIOrzQAOosVvHsgGF8bEiVLlegrenV.jpg);
+    
+  }
+  .container{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/02/71/25/73/1000_F_271257318_iENufuMNX2uZAxI0DrRF2UtPevmMOaew.jpg);
+  }
