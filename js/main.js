@@ -1,5 +1,8 @@
 const cards = document.getElementById("post-card")
-const layover = document.getElementById("leyover")
+const layover = document.getElementById("layover")
+const  layoverImg= document.getElementById("image-layover")
+const  buttonClose= document.getElementById("close-btn")
+const buttonOpen = document.getElementById("btn-open")
 const photoNumber=6
 
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
@@ -27,3 +30,20 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 }
 
 )
+
+
+buttonOpen.addEventListener("click",()=>{
+  layover.classList.remove("d-none")
+})
+
+
+
+
+buttonClose.addEventListener("click",()=>{
+  layover.classList.add("d-none")
+})
+
+
+
+
+

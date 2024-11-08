@@ -62,9 +62,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    display: none;
+   
   }
   
   .btn-primary{
     margin-top: 10px;
   }
+ .card{
+  cursor: pointer;
+ }
+
