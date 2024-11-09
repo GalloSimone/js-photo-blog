@@ -14,7 +14,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     cards.innerHTML +=`
      <div class="col">
                 <div class="card m-5 px-3 >
-                  <img src="${photo.url}" class="card-img-top" alt="priima foto">
+                  <img src="${photo.url}" class="card-img-top" alt="priima foto"  data-id="${photo.id}">
                   <div class="card-body">
                     <h5 class="card-title">${photo.title}</h5>
                    
@@ -30,9 +30,6 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 }
 
 )
-/**buttonOpen.addEventListener("click",()=>{
-  layover.classList.remove("d-none")
-})*/
 
 
 buttonClose.addEventListener("click",()=>{
@@ -40,8 +37,14 @@ buttonClose.addEventListener("click",()=>{
 })
 
 cards.addEventListener("click",()=>{
+
+
+
+  layoverImg.src = (`${photo.id}`);
   layover.classList.remove("d-none")
+        
 })
+
 
 
 
