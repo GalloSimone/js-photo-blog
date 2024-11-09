@@ -30,19 +30,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 }
 
 )
-
-
-buttonOpen.addEventListener("click",()=>{
+/**buttonOpen.addEventListener("click",()=>{
   layover.classList.remove("d-none")
-})
-
-
+})*/
 
 
 buttonClose.addEventListener("click",()=>{
   layover.classList.add("d-none")
 })
 
+cards.addEventListener("click",()=>{
+  layover.classList.remove("d-none")
+})
 
 
 
