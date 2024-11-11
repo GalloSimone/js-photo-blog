@@ -3,20 +3,22 @@ const layover = document.getElementById("layover")
 const  layoverImg= document.getElementById("image-layover")
 const  buttonClose= document.getElementById("close-btn")
 const buttonOpen = document.getElementById("btn-open")
+
+
 const photoNumber=6
 
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
-.then((res)=>res.json())
+.then((response)=>response.json())
 .then((photos)=>{
   console.log(photos);
 
-  photos.forEach((photo)=>{
+  photos.forEach((card)=>{
     cards.innerHTML +=`
      <div class="col">
-                <div class="card m-5 px-3 >
-                  <img src="${photo.url}" class="card-img-top" alt="priima foto"  data-id="${photo.id}">
+                <div class="card m-5 px-3" >
+                  <img src="${card.url}" class="card-img-top" alt="photo: ${card.id} " data-id="${card.id}">
                   <div class="card-body">
-                    <h5 class="card-title">${photo.title}</h5>
+                    <h5 class="card-title">${card.title}</h5>
                    
                   </div>
                 </div>
@@ -30,20 +32,18 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 }
 
 )
-
-
 buttonClose.addEventListener("click",()=>{
   layover.classList.add("d-none")
 })
+  cards.addEventListener("click",()=>{
+layover.classList.remove("d-none")
+});
 
-cards.addEventListener("click",()=>{
 
 
 
-  layoverImg.src = (`${photo.id}`);
-  layover.classList.remove("d-none")
-        
-})
+
+
 
 
 
