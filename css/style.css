@@ -76,3 +76,9 @@
   margin-top: 1rem;
  }
 
+@media screen and (min-width:574px) {
+  .container{
+    height: 3000px;
+  }
+  
+}
